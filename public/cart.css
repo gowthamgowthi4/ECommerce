@@ -1,0 +1,56 @@
+h1{
+    padding-left: 130px;
+}
+
+li{
+    font-size: larger;
+    text-decoration: none;
+    width: 300px;
+}
+
+.orderbtn {
+    background-color: #09ff00;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 340px;
+    opacity: 0.9;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.backbtn {
+    background-color: #09ff00;
+    color: black;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+    opacity: 0.9;
+    text-decoration: none;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    padding-left: 600px;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
