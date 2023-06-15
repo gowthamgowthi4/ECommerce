@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORIZONKART</title>
+    <link rel="stylesheet" href="/signup.css">
+</head>
+<body>
+    <div class="registerUser" id="registerUser">
+        <form id="registerUser" action="/signin" method="get">
+            <div class="container">
+                <h2 class="note" id="note">Register, if you are the first-time users</h2>
+
+                <label for="username" class="text" id="text"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="username" id="username" required/>
+
+                <label for="password"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="password" id="password" required/>
+
+                <label for="password-repeat"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="password-repeat" id="password-repeat" required/>
+
+                <br>
+
+                <p></p>
+
+                <button id="submitbtn" class="registerbtn"><b>Register</b></button>
+
+            </div>
+
+        </form>
+
+        <p></p>
+
+        <a href="/" id="cancelbtn" class="cancelbtn"><b>Cancel</b></a>
+
+        <p></p>
+
+        <div class="container-signin">
+            <p></p>
+            <p>Already have an account? <a href="/signin">Sign in</a></p>
+        </div>
+    </div>
+</body>
+</html>

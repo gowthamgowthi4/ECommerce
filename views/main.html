@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CORIZONKART</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="top-bar" id="top-bar">
+    <div class="logo"><a href="/">CORIZONKART</a></div>
+    <ul class="menu">
+      <li><a href="#main-menu" class="hover-link">Home</a></li>
+      <li><a href="#bottom-bar" class="hover-link">About</a></li>
+      <li><a href="#bottom-bar" class="hover-link">Contact</a></li>
+      <li><a href="/cart" class="hover-link">Cart</a></li>
+      <li><a href="/signin" class="hover-link" id="sign-in-link">SIGN IN</a></li>
+    </ul>
+  </div>
+  <div class="main-menu" id="main-menu">
+    <div class="welcome">
+      <p class="welcome-message">Hello <b class="welcome-name"><i class="welcome-name">Gowtham</i></b>! Please select the item you wish to purchase</p>
+    </div>
+
+    <div class="container">
+      <select onchange="scrollToSection(this.value);" class="dropdown">
+        <option class="dropdown-options" value="      ">      </option>
+        <option class="dropdown-options" value="laptop">Laptop</option>
+        <option class="dropdown-options" value="phone">Phone</option>
+        <option class="dropdown-options" value="backcover">Backcover</option>
+        <option class="dropdown-options" value="earphones">Earphones</option>
+      </select>
+    </div>
+  </div>
+
+  <p class="laptop" id="section-summary">Looking for the best laptops? Here you go! Purchase these bestest laptops with availing super special offers...</p>
+  <div class="image-grid">
+    <figure class="grid">
+      <img src="/laptop4.jpg" alt="Image 1">
+      <figcaption class="description" id="description">LENOVO Chromebook Duet 3</figcaption>
+      <figcaption class="imgprice">Rs. 33,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" id="addButton" name="laptop1" data-product="LENOVO Chromebook Duet 3" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/laptop5.jpg" alt="Image 2">
+      <figcaption class="description">Apple MacBook Air</figcaption>
+      <figcaption class="imgprice">Rs. 1,00,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="laptop2" data-product="Apple MacBook Air" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/laptop6.jpg" alt="Image 3">
+      <figcaption class="description">Microsoft Surface Laptop 5 (13.5-inch)</figcaption>
+      <figcaption class="imgprice">Rs. 45,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="laptop3" data-product="Microsoft Surface Laptop 5 (13.5-inch)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/laptop1.jpg" alt="Image 4">
+      <figcaption class="description">Dell XPS 13</figcaption>
+      <figcaption class="imgprice">Rs. 40,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="laptop4" data-product="Dell XPS 13" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/laptop7.jpg" alt="Image 5">
+      <figcaption class="description">Asus Zenbook Pro Duo 14</figcaption>
+      <figcaption class="imgprice">Rs. 64,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="laptop5" data-product="Asus Zenbook Pro Duo 14" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+  </div>
+
+  <p class="phone" id="section-summary">Can't even imagine life without phones! Once the opportunity, pick the best from here...</p>
+  <div class="image-grid">
+    <figure class="grid">
+      <img src="/phone4.jpg" alt="Image 1">
+      <figcaption class="description">OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 256GB Storage)</figcaption>
+      <figcaption class="imgprice">Rs. 51,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="phone1" data-product="OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 256GB Storage)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/phone2.jpg" alt="Image 2">
+      <figcaption class="description">Redmi Note 12 Pro+ 5G Arctic White 8GB 256GB</figcaption>
+      <figcaption class="imgprice">Rs. 44,800/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="phone2" data-product="Redmi Note 12 Pro+ 5G Arctic White 8GB 256GB" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/phone3.jpg" alt="Image 3">
+      <figcaption class="description">Google Pixel 6a 5G (Sage, 6GB RAM, 128GB Storage)</figcaption>
+      <figcaption class="imgprice">Rs. 80,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="phone3" data-product="Google Pixel 6a 5G (Sage, 6GB RAM, 128GB Storage)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/phone5.jpg" alt="Image 4">
+      <figcaption class="description">Redmi Note 11(Starburst White 6GB 128GB Storage)</figcaption>
+      <figcaption class="imgprice">Rs. 15,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="phone4" data-product="Redmi Note 11(Starburst White 6GB 128GB Storage)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/phone6.jpg" alt="Image 5">
+      <figcaption class="description">OnePlus 11 5G (Eternal Green, 8GB RAM, 128GB Storage)</figcaption>
+      <figcaption class="imgprice">Rs. 33,600/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="phone5" data-product="OnePlus 11 5G (Eternal Green, 8GB RAM, 128GB Storage)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/phone7.jpg" alt="Image 6">
+      <figcaption class="description">Vivo Y100 5G (Pacific Blue, 8GB RAM, 128GB Storage)</figcaption>
+      <figcaption class="imgprice">Rs. 25,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="phone6" data-product="Vivo Y100 5G (Pacific Blue, 8GB RAM, 128GB Storage)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/phone8.jpg" alt="Image 7">
+      <figcaption class="description">OnePlus 10T 5G (Moonstone Black, 8GB RAM, 128GB Storage)</figcaption>
+      <figcaption class="imgprice">Rs. 32,700/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="phone7" data-product="OnePlus 10T 5G (Moonstone Black, 8GB RAM, 128GB Storage)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+  </div>
+
+  <p class="backcover" id="section-summary">Outlook matters a lot! Make your mobile phones look elegant by purchasing one of these backcovers...</p>
+  <div class="image-grid">
+    <figure class="grid">
+      <img src="/backcover1.jpg" alt="Image 1">
+      <figcaption class="description">Jumbled design with colorful templates</figcaption>
+      <figcaption class="imgprice">Rs. 2,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="backcover1" data-product="Jumbled design with colorful templates" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/backcover2.jpg" alt="Image 2">
+      <figcaption class="description">Simple cover with a smart man outlook</figcaption>
+      <figcaption class="imgprice">Rs. 1,500/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="backcover2" data-product="Simple cover with a smart man outlook" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/backcover3.jpg" alt="Image 3">
+      <figcaption class="description">Rainbow colour pattern with criss-cross style</figcaption>
+      <figcaption class="imgprice">Rs. 1,750/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="backcover3" data-product="Rainbow colour pattern with criss-cross style" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+  </div>
+
+  <p class="earphones" id="section-summary">Want to vibe along to your favorite audio effectively? Look out to find some best earphones with fanatastic quality...</p>
+  <div class="image-grid">
+    <figure class="grid">
+      <img src="/earphones1.png" alt="Image 1">
+      <figcaption class="description">OnePlus Bullets Z2 Neckband with AI Noise Cancellation (IP55 Water Resistant, Upto 30 Hours Playback, Magico Black)</figcaption>
+      <figcaption class="imgprice">Rs. 2,500/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="earphones1" data-product="OnePlus Bullets Z2 Neckband with AI Noise Cancellation (IP55 Water Resistant, Upto 30 Hours Playback, Magico Black)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/earphones2.jpg" alt="Image 2">
+      <figcaption class="description">Portronics Conch Gama 1.2m Tangle Free Cable, in-Line Mic, Noise Isolation 3.5mm Aux Port and High Bass Wired Earphone (Black) (POR-1025)</figcaption>
+      <figcaption class="imgprice">Rs. 4,000/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="earphones2" data-product="Portronics Conch Gama 1.2m Tangle Free Cable, in-Line Mic, Noise Isolation 3.5mm Aux Port and High Bass Wired Earphone (Black) (POR-1025)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/earphones3.png" alt="Image 3">
+      <figcaption class="description">OnePlus Bullets Z2 Neckband with AI Noise Cancellation (IP55 Water Resistant, Upto 30 Hours Playback, Magico Black)</figcaption>
+      <figcaption class="imgprice">Rs. 6,400/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="earphones3" data-product="OnePlus Bullets Z2 Neckband with AI Noise Cancellation (IP55 Water Resistant, Upto 30 Hours Playback, Magico Black)" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+    <figure class="grid">
+      <img src="/earphones4.jpg" alt="Image 4">
+      <figcaption class="description">PHILIPS Audio TAE1136 Wired in Ear Earphones</figcaption>
+      <figcaption class="imgprice">Rs. 5,999/-</figcaption>
+      <figcaption class="addButton"><button class="addButton" name="earphones4" data-product="PHILIPS Audio TAE1136 Wired in Ear Earphones" onclick="displayMessage(this)">Add to Cart</button></figcaption>
+    </figure>
+  </div>
+  
+  
+  <div class="bottom-bar" id="bottom-bar">
+    <div class="col-md-8">
+      <div class="bottom1" id="bottom1">
+        <p class="bottom-about">Corizonkart</p>
+        <p class="bottom-about">Have a Happy and Comfortable Shopping Experience</p>
+        <p class="bottom-about">Thank You and Visit Again!!!</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="bottom2" id="bottom2">
+        <p class="bottom-contact">Contact: 6382147949</p>
+        <p class="bottom-contact">Email: gboawatlhaajmi4@gmail.com</p>
+        <p class="bottom-contact">Headquarters: Chennai</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

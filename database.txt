@@ -1,0 +1,97 @@
+[
+  {
+    "productname": "LENOVO Chromebook Duet 3",
+    "productprice": 33000,
+    "available": 6
+  },
+  {
+    "productname": "Apple MacBook Air",
+    "productprice": 100000,
+    "available": 6
+  },
+  {
+    "productname": "Microsoft Surface Laptop 5 (13.5-inch)",
+    "productprice": 45000,
+    "available": 6
+  },
+  {
+    "productname": "Dell XPS 13",
+    "productprice": 40000,
+    "available": 6
+  },
+  {
+    "productname": "Asus Zenbook Pro Duo 14",
+    "productprice": 64000,
+    "available": 6
+  },
+  {
+    "productname": "OnePlus Nord CE 3 Lite 5G (Pastel Lime, 8GB RAM, 256GB Storage)",
+    "productprice": 51000,
+    "available": 6
+  },
+  {
+    "productname": "Redmi Note 12 Pro+ 5G Arctic White 8GB 256GB",
+    "productprice": 44800,
+    "available": 6
+  },
+  {
+    "productname": "Google Pixel 6a 5G (Sage, 6GB RAM, 128GB Storage)",
+    "productprice": 80000,
+    "available": 6
+  },
+  {
+    "productname": "Redmi Note 11(Starburst White 6GB 128GB Storage)",
+    "productprice": 15000,
+    "available": 6
+  },
+  {
+    "productname": "OnePlus 11 5G (Eternal Green, 8GB RAM, 128GB Storage)",
+    "productprice": 33600,
+    "available": 6
+  },
+  {
+    "productname": "Vivo Y100 5G (Pacific Blue, 8GB RAM, 128GB Storage)",
+    "productprice": 25000,
+    "available": 6
+  },
+  {
+    "productname": "OnePlus 10T 5G (Moonstone Black, 8GB RAM, 128GB Storage)",
+    "productprice": 32700,
+    "available": 6
+  },
+  {
+    "productname": "Jumbled design with colorful templates",
+    "productprice": 2000,
+    "available": 6
+  },
+  {
+    "productname": "Simple cover with a smart man outlook",
+    "productprice": 1500,
+    "available": 6
+  },
+  {
+    "productname": "Rainbow colour pattern with criss-cross style",
+    "productprice": 1750,
+    "available": 6
+  },
+  {
+    "productname": "OnePlus Bullets Z2 Neckband with AI Noise Cancellation (IP55 Water Resistant, Upto 30 Hours Playback, Magico Black)",
+    "productprice": 2500,
+    "available": 6
+  },
+  {
+    "productname": "Portronics Conch Gama 1.2m Tangle Free Cable, in-Line Mic, Noise Isolation 3.5mm Aux Port and High Bass Wired Earphone (Black) (POR-1025)",
+    "productprice": 4000,
+    "available": 6
+  },
+  {
+    "productname": "OnePlus Bullets Z2 Neckband with AI Noise Cancellation (IP55 Water Resistant, Upto 30 Hours Playback, Magico Black)",
+    "productprice": 6400,
+    "available": 6
+  },
+  {
+    "productname": "PHILIPS Audio TAE1136 Wired in Ear Earphones",
+    "productprice": 5999,
+    "available": 6
+  },
+]

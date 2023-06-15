@@ -1,0 +1,239 @@
+*{
+	background-color: #000000;
+}
+
+.top-bar {
+	background-color: black;
+	color: #ff0000;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* padding: 0 20px; */
+	padding: 20px;
+  }
+  
+  .logo a{
+	font-weight: bolder;
+	font-size: 40px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background-color: black;
+	color:#ff0000;
+	animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+	text-decoration: none;
+  }
+
+  @keyframes example {
+    0%  {color: red;}
+    7%  {color: orange;}
+    14% {color: yellow;}
+    21% {color: yellowgreen;}
+    28% {color: green;}
+    35% {color: darkgreen;}
+    42% {color: rgb(0, 100, 82);}
+    49% {color: lightblue;}
+    56% {color: rgb(118, 62, 238);}
+    64% {color: blue;}
+    71% {color: rgb(144, 0, 255);}
+    78% {color: rgb(246, 61, 252);}
+    85% {color: rgb(253, 4, 170);}
+    92% {color: rgb(253, 4, 95);}
+    100%{color: red;}
+    
+}
+  
+  .menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: x-large;
+	background-color: black;
+  }
+  
+  .menu li {
+	display: inline-block;
+	background-color: black;
+	margin-left: 10px;
+	padding: 20px;
+  }
+  
+  .menu li:first-child {
+	margin-left: 0;
+  }
+  
+  .menu li a {
+	color: #ffffff;
+	background-color: black;
+	text-decoration: none;
+  }
+  
+  .hover-link {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .hover-link::after {
+	content: "";
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: rgb(255, 0, 0);
+	transform: scaleX(0);
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .hover-link:hover::after {
+	transform: scaleX(1);
+  }  
+
+  .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+	padding-bottom: 20px;
+	background-color: rgb(61, 60, 46);
+  }
+  
+  .dropdown {
+	padding: 10px;
+	font-size: 16px;
+	background-color: #ffffff;
+	color: #000000;
+  }
+  
+  .dropdown-options{
+	background-color: #ffffff;
+	color: #000000;
+  }
+
+  .welcome{
+	padding-left: 20px;
+	padding-top: 10px;
+	font-size:x-large;
+	font-weight: lighter;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: rgb(61, 60, 46);
+	color: #ffffff;
+	
+  }
+
+  .welcome-message{
+	background-color: rgb(61, 60, 46);
+  }
+
+  .welcome-name{
+	background-color: rgb(61, 60, 46);
+	font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .main-menu{
+	background-color: rgb(61, 60, 46);
+  }
+
+  #section-summary{
+	color:#000000;
+	background-color: #ff0000;
+	font-weight: bold;
+	font-size: x-large;
+	padding: 20px;
+  }
+
+  .grid{
+	padding: 20px;
+  }
+
+  .image-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+	gap: 20px;
+	background-color: rgb(61, 60, 46);
+	padding-top: 40px;
+	padding-bottom: 40px;
+  }
+  
+  .image-grid figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+  }
+  
+  .image-grid img {
+	width: 250px;
+	height: 250px;
+  }
+  
+  figcaption{
+	font-size: large;
+  }
+
+  .description{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	color: #ffffff;
+  }
+
+  .imgprice{
+	padding-bottom: 10px;
+	padding-top: 5px;
+	color: #ffffff;
+  }
+
+  button{
+	background-color: #ffffff;
+	color: #000000;
+  }
+
+  .message{
+	color: #ff0000;
+	font-size: large;
+	font-weight: bolder;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .bottom-bar {
+	background-color: #290303;
+	color: #ffffff;
+	height: 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 20px;
+  }
+
+  .bottom1{
+	font-size: x-large;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #6c0909;
+	color: #ffffff;
+  }
+
+  .bottom2{
+	font-size: x-large;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #6c0909;
+	color: #ffffff;
+  }
+
+  .col-md-8{
+	background-color: #6c0909;
+  }
+
+  .col-md-4{
+	background-color: #6c0909;
+  }
+
+  .bottom-about{
+	background-color: #6c0909;
+  }
+
+  .bottom-contact{
+	background-color: #6c0909;
+  }
